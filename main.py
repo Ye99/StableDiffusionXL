@@ -8,6 +8,7 @@ pipe = DiffusionPipeline.from_pretrained("stabilityai/stable-diffusion-xl-base-1
 # pipe.to("cuda")
 # If your GPU has < 8GB vRAM
 pipe.enable_model_cpu_offload()
+# This is another method to save vRAM footprint, but requires installing xFormer and change code.
 # pipe.enable_xformers_memory_efficient_attention()
 
 # if using torch < 2.0
